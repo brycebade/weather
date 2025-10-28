@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bryce's Weather Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <h1>The Weather</h1>
+  <header>
+    <input class="location" type="text" id="location" name="location" placeholder="Address, City or Zip">
+  </header>
+  <nav>
+    <a href="">Home</a>
+    <a href="">Forecast</a>
+    <a href="">Maps/Radar</a>
+    <a href="">Past Weather</a>
+  </nav>
+  <main>
+    <section>
+      <div class="weather__box">
+        <p class="current__weather">Current Weather<p>
+        <div class="weather__stats">
+          <p>Windchill</p>
+          <p>Wind</p>
+          <p>Wind Gust</p>
+          <p>Air Quality</p>
+          <p>UV Index</p>
+        </div>
+      </div>
+    </section>
+    <section>
+     
+      <iframe 
+  width="600" 
+  height="400" 
+  src="https://embed.windy.com/embed2.html?lat=38.9&lon=-94.38&zoom=6&overlay=radar"
+  frameborder="0">
+</iframe>
+
+    </section>
+  </main>
+</body>
+
+</html>
