@@ -24,20 +24,40 @@
   <main>
     <section>
       <div class="weather__box">
-        <p class="current__weather">Current Weather<p>
-        <div class="weather__stats">
-          <p>Windchill</p>
-          <p>Wind</p>
-          <p>Wind Gust</p>
-          <p>Air Quality</p>
-          <p>UV Index</p>
+        <div class="weather__box-col weather__box-col--left">
+          <h2 id="current__weather-title" class="weather__box-title">Current Weather</h2>
+          <p class="weather__box-temp">##°F</p>
+          <p class="weather__box-meta">
+            <span class="label">Wind</span>
+            <span class="value">NW</span>
+          </p>
+          <p class="weather__box-meta">
+            <span class="label">Hi / Low:</span>
+            <span class="value">##° / ##°</span>
+          </p>
+        </div>
+        <div class="weather__box-col weather__box-col--right">
+          <ul class="weather__box-list">
+            <li class="weather__box-item">
+              <span class="label">Feels (WC/HI):</span>
+              <span class="value">##°F</span>
+            </li>
+            <li class="weather__box-item">
+              <span class="label">Air Quality</span>
+              <span class="value">AQI ##</span>
+            </li>
+            <li class="weather__box-item">
+              <span class="label">UV Index</span>
+              <span class="value">##</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section>
-     <div class="radar__embed"><iframe title="Live Radar" src="https://embed.windy.com/embed2.html?lat=38.368&lon=-93.778&zoom=7&level=surface&overlay=radar&menu=&message=true&marker=true&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=38.368&detailLon=-93.778" frameborder="0">
-        </iframe>
-     </div>
+
+      <div class="radar__embed"><iframe title="Live Radar" src="https://embed.windy.com/embed2.html?lat=38.368&lon=-93.778&zoom=7&level=surface&overlay=radar&menu=&message=true&marker=true&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=38.368&detailLon=-93.778" frameborder="0">
+        </iframe></div>
 
     </section>
   </main>
