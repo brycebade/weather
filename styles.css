@@ -34,11 +34,6 @@ a {
   font-size: 24px;
 }
 
-.current__weather {
-  font-size: 24px;
-  font-weight: bold;
-}
-
 .weather__box {
   border: 3px solid black;
   width: 75%;
@@ -47,10 +42,6 @@ a {
   justify-content: space-between;
   padding: 20px;
   margin: 20px auto;
-}
-
-.weather__stats{
-  margin-right: 100px
 }
 
 .radar__embed {
